@@ -4,7 +4,7 @@ export default function PageHeader({ title, subtitle, text }) {
     <section
       className="py-16 md:py-24"
       style={{
-        backgroundColor: "var(--color-adcoed-charcoal, #1a1a1a)",
+        backgroundColor: "#0f2418",
       }}
     >
       <div className="max-w-7xl mx-auto px-6">

@@ -4,10 +4,21 @@ export const asset = (p) => import.meta.env.BASE_URL + p.replace(/^\//, "");
 export const college = {
   name: "Awori District College of Education",
   short: "ADCOED",
-  location: "Ogun State, Nigeria",
-  address: "[Address placeholder]",
-  phone: "[Phone placeholder]",
+  location: "Bankole Estate, Along Ajibode Road, Ogun State, Nigeria",
+  address: "Bankole Estate, Along Ajibode Road, Ogun State, Nigeria",
+  phone: "08023937892, 08033443791, 08065130564",
   email: "[Email placeholder]",
+};
+
+export const aboutCollege = {
+  intro:
+    "Awori District College of Education (ADCOED) is a leading institution of teacher education located in Otto/Awori, Lagos State, Nigeria. The college is dedicated to producing qualified, competent, and morally upright educators who are equipped to meet the evolving demands of Nigeria's education sector.",
+  /** Replace with confirmed institutional history */
+  history:
+    "[A detailed history of the college, including its founding, growth, and key milestones, should be provided here — PLACEHOLDER]",
+  /** Replace with confirmed leadership information */
+  leadership:
+    "[Information about the college's leadership structure, the Provost, Registrar, and other principal officers should be confirmed and inserted here — PLACEHOLDER]",
 };
 
 // Official statement from the college: affiliation began in 2017.
@@ -15,7 +26,7 @@ export const college = {
 export const affiliation = {
   partner: "Ekiti State University (EKSU)",
   since: 2017,
-  logo: "/images/eksu-logo.png", // place the OFFICIAL EKSU logo here, unaltered
+  logo: "/images/eksu.jpeg", // place the OFFICIAL EKSU logo here, unaltered
   verify:
     "[Verify with the college: exact scope of the affiliation, programmes covered and awards.]",
 };
@@ -33,13 +44,31 @@ export const images = {
 };
 
 export const mvv = {
-  mission: "[Official mission statement to be supplied by the college.]",
-  vision: "[Official vision statement to be supplied by the college.]",
+  mission:
+    "To enhance the quality of teaching and learning in the process of human capital development for the educational sector and the nation. This will be in reference to the students' capacity for scholarship development that recognizes dignity for labor, integrity and selflessness.",
+  vision:
+    "To be the preferred college of education which will excel in preparing of its students who are future leaders ahead of a better tomorrow.",
   values: [
-    "[Core value 1]",
-    "[Core value 2]",
-    "[Core value 3]",
-    "[Core value 4]",
+    {
+      name: "Academic Excellence",
+      description: "[Description of this core value — PLACEHOLDER]",
+    },
+    {
+      name: "Responsibility",
+      description: "[Description of this core value — PLACEHOLDER]",
+    },
+    {
+      name: "Integrity",
+      description: "[Description of this core value — PLACEHOLDER]",
+    },
+    {
+      name: "Spirituality",
+      description: "[Description of this core value — PLACEHOLDER]",
+    },
+    {
+      name: "Discipline",
+      description: "[Description of this core value — PLACEHOLDER]",
+    },
   ],
 };
 
@@ -59,20 +88,32 @@ export const admissionNotice =
 
 export const programmes = [
   {
-    name: "Department of [Name]",
-    summary: "[Programmes and awards to be supplied by the college]",
+    name: "Department of Science",
+    summary:
+      "Chemistry, Biology, Computer Science, Integrated Science, Mathematics.",
   },
   {
-    name: "Department of [Name]",
-    summary: "[Programmes and awards to be supplied by the college]",
+    name: "Department of Arts and Social Science Education",
+    summary:
+      "Christian Religious Knowledge, Economic, Islamic Studies, Political Science, Social Studies etc.",
   },
   {
-    name: "Department of [Name]",
-    summary: "[Programmes and awards to be supplied by the college]",
+    name: "Department of Vocational Education",
+    summary: "Adult Education.",
   },
   {
-    name: "Department of [Name]",
-    summary: "[Programmes and awards to be supplied by the college]",
+    name: "Department of Language",
+    summary: "English Language, Yoruba.",
+  },
+  {
+    name: "Department of Education",
+    summary:
+      "Primary Education Studies (PES)(DM), Early Childhood Care and Education (ECCE).",
+  },
+  {
+    name: "Department of Remedial Studies",
+    summary:
+      "Preparatory Classes and Registration for WASSCE(JUNE/JULY & NOV/DEC) and NECO/SSCE (JUNE/JULY & NOV/DEC (JAMB UTME)), Degree Foundation Programme.",
   },
 ];
 

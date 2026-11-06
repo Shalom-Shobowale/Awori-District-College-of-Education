@@ -56,7 +56,10 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <h3 className="mb-1 font-medium" style={{ fontSize: "17px"}}>
+                    <h3
+                      className="mb-1 font-medium"
+                      style={{ fontSize: "17px", fontWeight: 600 }}
+                    >
                       Address
                     </h3>
                     <p className="text-adcoed-muted text-sm leading-relaxed">
@@ -86,7 +89,12 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <h3 className="font-medium mb-1" style={{ fontSize: "17px"}}>Phone</h3>
+                    <h3
+                      className="font-medium mb-1"
+                      style={{ fontSize: "17px", fontWeight: 600 }}
+                    >
+                      Phone
+                    </h3>
                     <p className="text-adcoed-muted text-sm">
                       {college.phone || "Official phone number to be updated"}
                     </p>
@@ -112,7 +120,12 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <h3 className="font-medium mb-1" style={{ fontSize: "17px"}}>Email</h3>
+                    <h3
+                      className="font-medium mb-1"
+                      style={{ fontSize: "17px", fontWeight: 600 }}
+                    >
+                      Email
+                    </h3>
                     <p className="text-adcoed-muted text-sm">
                       {college.email || "Official email to be updated"}
                     </p>
@@ -138,7 +151,12 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <h3 className="font-medium mb-1" style={{ fontSize: "17px"}}>Office Hours</h3>
+                    <h3
+                      className="font-medium mb-1"
+                      style={{ fontSize: "17px", fontWeight: 600 }}
+                    >
+                      Office Hours
+                    </h3>
                     <p className="text-adcoed-muted text-sm">
                       Monday – Friday: 8:00 AM – 4:00 PM
                     </p>
@@ -158,10 +176,10 @@ export default function Contact() {
       </section>
 
       {/* Campus Image / Map */}
-      <section className="bg-adcoed-cream py-12">
+      <section className="bg-adcoed-cream py-4">
         <Reveal>
-          <div className="img-placeholder h-64 md:h-80">
-            <div className="flex flex-col items-center gap-2">
+          <div className="h-64 md:h-96">
+            {/* <div className="flex flex-col items-center gap-2">
               <svg
                 className="w-8 h-8 text-adcoed-green/40"
                 fill="none"
@@ -174,11 +192,18 @@ export default function Contact() {
                   strokeWidth={1.5}
                   d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
                 />
-              </svg>
-              <span className="text-adcoed-green/50 text-xs font-medium tracking-wider uppercase">
-                Map — Embed Google Maps here
-              </span>
-            </div>
+              </svg> */}
+              {/* <span className="text-adcoed-green/50 text-xs font-medium tracking-wider uppercase"> */}
+                {/* Map — Embed Google Maps here */}
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8472.642370743124!2d3.3938680643145727!3d6.723299504836779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103ba3baea45c283%3A0xb333627cb323639c!2sBankole%20Estate!5e0!3m2!1sen!2sng!4v1793801731913!5m2!1sen!2sng"
+                  style={{ border: 0, width: "100%", height: "100%", borderRadius: 10 }}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                ></iframe>
+              {/* </span> */}
+            {/* </div> */}
           </div>
         </Reveal>
       </section>

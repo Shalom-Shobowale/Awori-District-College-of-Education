@@ -17,7 +17,7 @@ import { affiliation } from "../data/site.js";
 export default function Home() {
   return (
     <>
-      <section className="relative bg-adcoed-charcoal overflow-hidden">
+      <section className="relative overflow-hidden bg-[url(/images/peace.png)] bg-center bg-no-repeat bg-cover">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 min-h-[85vh]">
             {/* Text Column */}
@@ -47,10 +47,10 @@ export default function Home() {
                 through quality teaching.
               </p>
               <div className="flex flex-wrap gap-3 mt-8 anim-fade-up anim-delay-3">
-                <Link href="/admissions/apply" className="btn btn-primary">
+                <Link href="/admissions/apply" className="btn" style={{ border: "1px solid white", color: "white" }}>
                   Begin Your Application
                 </Link>
-                <Link href="/programmes" className="btn btn-outline-white">
+                <Link href="/programmes" className="btn" style={{ border: "1px solid white", color: "white" }}>
                   Explore Programmes
                 </Link>
               </div>
@@ -62,16 +62,16 @@ export default function Home() {
 
             {/* Image Column */}
             <div className="relative lg:block">
-              <Photo
-                src="/images/sausage-roll.jpg"
+              {/* <Photo
+                src="/images/college.jpg"
                 alt="ADCOED campus"
                 label="Hero — Campus Photograph"
                 aspectRatio="auto"
                 className="absolute inset-0 w-full h-full"
                 dark
-              />
+              /> */}
               {/* Gradient overlay for text readability on mobile */}
-              <div className="absolute inset-0 bg-gradient-to-t from-adcoed-charcoal via-adcoed-charcoal/60 to-transparent lg:bg-gradient-to-r lg:from-adcoed-charcoal lg:via-transparent lg:to-transparent" />
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-adcoed-charcoal via-adcoed-charcoal/60 to-transparent lg:bg-gradient-to-r lg:from-adcoed-charcoal lg:via-transparent lg:to-transparent" /> */}
             </div>
           </div>
         </div>
