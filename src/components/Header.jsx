@@ -31,6 +31,7 @@ export default function Header() {
             </span>
           </Link>
           <button
+            type="button"
             className="tg"
             aria-expanded={open}
             aria-controls="nv"

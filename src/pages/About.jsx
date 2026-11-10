@@ -77,9 +77,9 @@ College of Education"
         >
           Our Campus &amp; Facilities
         </h2>
-        <section className="flex justify-center w-[92%] mx-auto gap-5">
+        <section className="flex lg:flex-row flex-col justify-center w-[80%] lg:w-[92%] mx-auto gap-5">
           {schoolEnvironment.map((env, index) => (
-            <div className="bg-white w-[22%] rounded-b-xs" key={index}>
+            <div className="bg-white w-full lg:w-[22%] rounded-b-xs" key={index}>
               <Photo
                 src={images.campus}
                 label="Campus exterior"

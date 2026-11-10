@@ -98,75 +98,85 @@ export default function Apply() {
     );
 
   return (
-    <Page title="Online application" text="Apply to ADCOED" subtitle="Complete the application form below to begin your admission process.">
-      <p className="note">
-        <b>Preview only.</b> This form validates entries and shows a
-        confirmation, but nothing is sent or saved. A real admissions system
-        needs a deployed backend, a secure database, access controls and careful
-        handling of applicants’ personal information.
-      </p>
-      {state === "fail" && (
-        <p className="note" role="alert">
-          The application could not be sent. Check your connection and try
-          again.
-        </p>
-      )}
-      <form noValidate onSubmit={onSubmit} className="bg-red-500 w-full">
-        {GROUPS.map(([legend, fs]) => (
-          <fieldset key={legend}>
-            <legend>{legend}</legend>
-            {fs.map((f) => (
-              <div
-                key={f.id}
-                className={`fd ${f.type === "textarea" ? "full" : ""}`}
-              >
-                <label htmlFor={f.id}>{f.label}</label>
-                {f.type === "select" ? (
-                  <select
-                    id={f.id}
-                    value={v[f.id] || ""}
-                    aria-invalid={!!err[f.id]}
-                    aria-describedby={`e-${f.id}`}
-                    onChange={set(f.id)}
-                  >
-                    <option value="">Choose a programme</option>
-                    {programmes.map((p, i) => (
-                      <option key={i}>
-                        {p.name} ({i + 1})
-                      </option>
-                    ))}
-                  </select>
-                ) : f.type === "textarea" ? (
-                  <textarea
-                    id={f.id}
-                    rows="4"
-                    value={v[f.id] || ""}
-                    onChange={set(f.id)}
-                  />
-                ) : (
-                  <input
-                    id={f.id}
-                    type={f.type}
-                    required={f.req}
-                    value={v[f.id] || ""}
-                    aria-invalid={!!err[f.id]}
-                    aria-describedby={`e-${f.id}`}
-                    onChange={set(f.id)}
-                  />
-                )}
-                <div className="er" id={`e-${f.id}`} role="alert">
-                  {err[f.id]}
+    <Page
+      title="Online application"
+      text="Apply to ADCOED"
+      subtitle="Complete the application form below to begin your admission process."
+    >
+      <section className="flex flex-col items-center">
+        {/* <p className="note">
+          <b>Preview only.</b> This form validates entries and shows a
+          confirmation, but nothing is sent or saved. A real admissions system
+          needs a deployed backend, a secure database, access controls and
+          careful handling of applicants’ personal information.
+        </p> */}
+        {state === "fail" && (
+          <p className="note" role="alert">
+            The application could not be sent. Check your connection and try
+            again.
+          </p>
+        )}
+        <form noValidate onSubmit={onSubmit} className=" w-full">
+          {GROUPS.map(([legend, fs]) => (
+            <fieldset key={legend}>
+              <legend>{legend}</legend>
+              {fs.map((f) => (
+                <div
+                  key={f.id}
+                  className={`fd ${f.type === "textarea" ? "full" : ""}`}
+                >
+                  <label htmlFor={f.id}>{f.label}</label>
+                  {f.type === "select" ? (
+                    <select
+                      id={f.id}
+                      value={v[f.id] || ""}
+                      aria-invalid={!!err[f.id]}
+                      aria-describedby={`e-${f.id}`}
+                      onChange={set(f.id)}
+                    >
+                      <option value="">Choose a programme</option>
+                      {programmes.map((p, i) => (
+                        <option key={i}>
+                          {p.name} ({i + 1})
+                        </option>
+                      ))}
+                    </select>
+                  ) : f.type === "textarea" ? (
+                    <textarea
+                      id={f.id}
+                      rows="4"
+                      value={v[f.id] || ""}
+                      onChange={set(f.id)}
+                    />
+                  ) : (
+                    <input
+                      id={f.id}
+                      type={f.type}
+                      required={f.req}
+                      value={v[f.id] || ""}
+                      aria-invalid={!!err[f.id]}
+                      aria-describedby={`e-${f.id}`}
+                      onChange={set(f.id)}
+                    />
+                  )}
+                  <div className="er" id={`e-${f.id}`} role="alert">
+                    {err[f.id]}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </fieldset>
-        ))}
-        <div>
-          <button className="btn" type="submit" disabled={state === "sending"}>
-            {state === "sending" ? "Submitting…" : "Submit application"}
-          </button>
-        </div>
-      </form>
+              ))}
+            </fieldset>
+          ))}
+          <div>
+            <button
+              className="btn"
+              type="submit"
+              disabled={state === "sending"}
+            >
+              {state === "sending" ? "Submitting…" : "Submit application"}
+            </button>
+          </div>
+        </form>
+      </section>
     </Page>
   );
 }

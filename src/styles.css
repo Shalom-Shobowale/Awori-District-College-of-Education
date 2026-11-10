@@ -752,9 +752,9 @@ textarea:focus {
 .ex .ph:nth-child(2) {
   margin-top: 56px;
 }
-.hd .brand {
+/* .hd .brand {
   flex-shrink: 0;
-}
+} */
 nav a.act::after {
   transform: scaleX(1);
 }
@@ -783,3 +783,8 @@ nav a.act::after {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+

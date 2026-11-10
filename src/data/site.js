@@ -15,8 +15,8 @@ export const aboutCollege = {
     "Awori District College of Education (ADCOED) is a leading institution of teacher education located in Otto/Awori, Lagos State, Nigeria. The college is dedicated to producing qualified, competent, and morally upright educators who are equipped to meet the evolving demands of Nigeria's education sector.",
   /** Replace with confirmed institutional history */
   history:
-    "[A detailed history of the college, including its founding, growth, and key milestones, should be provided here — PLACEHOLDER]",
-  /** Replace with confirmed leadership information */
+    "Awori District College of Education received approval from the National Commission for Colleges of Education (NCCE) in 2010, marking an important milestone in its establishment and development as an institution dedicated to teacher education. In 2017, the college became affiliated with Ekiti State University (EKSU), establishing an academic relationship that represents another significant stage in its institutional journey. The college continues to pursue its commitment to teacher education and the preparation of future educators.",
+    
   leadership:
     "[Information about the college's leadership structure, the Provost, Registrar, and other principal officers should be confirmed and inserted here — PLACEHOLDER]",
 };
