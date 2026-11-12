@@ -104,12 +104,12 @@ export default function Apply() {
       subtitle="Complete the application form below to begin your admission process."
     >
       <section className="flex flex-col items-center">
-        <p className="note">
+        {/* <p className="note">
           <b>Preview only.</b> This form validates entries and shows a
           confirmation, but nothing is sent or saved. A real admissions system
           needs a deployed backend, a secure database, access controls and
           careful handling of applicants’ personal information.
-        </p>
+        </p> */}
         {state === "fail" && (
           <p className="note" role="alert">
             The application could not be sent. Check your connection and try
