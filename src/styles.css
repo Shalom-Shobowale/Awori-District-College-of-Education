@@ -71,7 +71,7 @@ h3 {
 }
 p {
   margin: 0 0 1em;
-  max-width: 66ch; 
+  max-width: 66ch;
 }
 
 .article-body p {
@@ -175,7 +175,7 @@ nav a[aria-current]::after {
 .btn {
   display: inline-block;
   /* background: var(--g2); */
-  color: var(--g2) ;
+  color: var(--g2);
   padding: 12px 22px;
   font-weight: 600;
   text-decoration: none;
@@ -470,7 +470,7 @@ footer li {
   color: var(--c2);
 }
 .page {
-  padding: 64px 0 90px;
+  padding: 64px 0px;
 }
 .page .lead {
   font-size: 1.2rem;
@@ -525,6 +525,7 @@ textarea {
   background: #fff;
   color: var(--ink);
 }
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -610,6 +611,11 @@ textarea:focus {
   footer .g {
     grid-template-columns: 1fr;
   }
+
+  .wrap {
+    max-width: 100%;
+    padding: 0 16px;
+  }
   .hero .ph {
     min-height: 260px;
   }
@@ -621,7 +627,20 @@ textarea:focus {
   }
   fieldset {
     grid-template-columns: 1fr;
+    padding: 0px;
   }
+
+  input,
+  select,
+  textarea {
+    padding: 5px 2px;
+    width: 100%;
+  }
+
+  form {
+    max-width: 400px;
+  }
+
   .sec {
     padding: 60px 0;
   }
@@ -782,9 +801,8 @@ nav a.act::after {
   .aff {
     grid-template-columns: 1fr;
   }
+
+  .ph {
+    min-height: 180px;
+  }
 }
-
-
-
-
-

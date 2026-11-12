@@ -56,7 +56,7 @@ export default function Home() {
               </div>
               {/* Decorative accent line */}
               <div className="mt-12 anim-fade-up anim-delay-4">
-                <div className="w-12 h-[2px] bg-adcoed-green" />
+                <div className="w-12 h-0.5 bg-adcoed-green" />
               </div>
             </div>
 

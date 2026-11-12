@@ -48,7 +48,7 @@ export default function Downloads() {
               <div className="space-y-3">
                 {items.map((doc, i) => (
                   <Reveal key={doc.title} delay={i * 60}>
-                    <div className="flex items-center gap-4 bg-adcoed-cream p-5 hover:bg-white border border-transparent hover:border-adcoed-border transition-all group">
+                    <div className="flex lg:flex-row flex-col items-center gap-4 bg-adcoed-cream p-5 hover:bg-white border border-transparent hover:border-adcoed-border transition-all group">
                       {/* Download Icon */}
                       <div className="w-10 h-10 bg-adcoed-green text-white flex items-center justify-center shrink-0">
                         <svg
